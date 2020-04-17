@@ -4,6 +4,9 @@ using System.Xml.Serialization;
 
 namespace Ness.Utils
 {
+    /// <summary>
+    /// A dictionary that can be serialized / deserialized to XMLs.
+    /// </summary>
     [XmlRoot("dictionary")]
     public class SerializableDictionary<TKey, TValue>
         : Dictionary<TKey, TValue>, IXmlSerializable

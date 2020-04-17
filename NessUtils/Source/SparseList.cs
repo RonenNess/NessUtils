@@ -280,7 +280,7 @@ namespace Ness.Utils
                 do
                 {
                     // values changed during iteration
-                    // if (version != list._version) { throw new InvalidOperationException("Collection modified"); }
+                    if (version != list._version) { throw new InvalidOperationException("Collection modified"); }
 
                     // move to next index until we get a valud value
                     while (++index < list.CountWithNulls && list[index] == null)
