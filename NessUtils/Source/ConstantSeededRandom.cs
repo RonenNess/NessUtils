@@ -6,6 +6,8 @@ namespace Ness.Utils
     /// <summary>
     /// A very fast and simple random numbers generator with seed, gueranteed to remain the same no matter what C# or .net version we run.
     /// This is for things that must absolutely always generate the same results.
+    /// 
+    /// Note: System.Random with provided seed is usually enough, I used this class when I needed the same randomness in C# and a corresponding JavaScript code.
     /// </summary>
     public class ConstantSeededRandom
     {
